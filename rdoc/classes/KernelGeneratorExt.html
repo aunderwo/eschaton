@@ -80,12 +80,12 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000038">comment</a>&nbsp;&nbsp;
-      <a href="#M000037">eval</a>&nbsp;&nbsp;
-      <a href="#M000042">generate</a>&nbsp;&nbsp;
-      <a href="#M000039">if</a>&nbsp;&nbsp;
-      <a href="#M000041">merge</a>&nbsp;&nbsp;
-      <a href="#M000040">unless</a>&nbsp;&nbsp;
+      <a href="#M000022">comment</a>&nbsp;&nbsp;
+      <a href="#M000021">eval</a>&nbsp;&nbsp;
+      <a href="#M000026">generate</a>&nbsp;&nbsp;
+      <a href="#M000023">if</a>&nbsp;&nbsp;
+      <a href="#M000025">merge</a>&nbsp;&nbsp;
+      <a href="#M000024">unless</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -107,26 +107,26 @@
     <div id="methods">
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000038" class="method-detail">
-        <a name="M000038"></a>
+      <div id="method-M000022" class="method-detail">
+        <a name="M000022"></a>
 
         <div class="method-heading">
-          <a href="#M000038" class="method-signature">
+          <a href="#M000022" class="method-signature">
           <span class="method-name">comment</span><span class="method-args">(message)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Writes out a <a href="KernelGeneratorExt.html#M000038">comment</a> with the
+Writes out a <a href="KernelGeneratorExt.html#M000022">comment</a> with the
 given <tt>message</tt>.
 </p>
 <pre>
  comment 'this code is awesome!' #=&gt; '/* this code is awesome! */'
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000038-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000038-source">
+            onclick="toggleCode('M000022-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000022-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/eschaton_kernel/kernel_generator_ext.rb, line 11</span>
 11:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">comment</span>(<span class="ruby-identifier">message</span>)
@@ -137,11 +137,11 @@ given <tt>message</tt>.
         </div>
       </div>
 
-      <div id="method-M000037" class="method-detail">
-        <a name="M000037"></a>
+      <div id="method-M000021" class="method-detail">
+        <a name="M000021"></a>
 
         <div class="method-heading">
-          <a href="#M000037" class="method-signature">
+          <a href="#M000021" class="method-signature">
           <span class="method-name">eval</span><span class="method-args">(script)</span>
           </a>
         </div>
@@ -151,8 +151,8 @@ given <tt>message</tt>.
 Evaluates the <tt>script</tt> as javascript on the client.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000037-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000037-source">
+            onclick="toggleCode('M000021-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000021-source">
 <pre>
    <span class="ruby-comment cmt"># File slices/eschaton_kernel/kernel_generator_ext.rb, line 4</span>
 4:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">eval</span>(<span class="ruby-identifier">script</span>)
@@ -163,11 +163,11 @@ Evaluates the <tt>script</tt> as javascript on the client.
         </div>
       </div>
 
-      <div id="method-M000042" class="method-detail">
-        <a name="M000042"></a>
+      <div id="method-M000026" class="method-detail">
+        <a name="M000026"></a>
 
         <div class="method-heading">
-          <a href="#M000042" class="method-signature">
+          <a href="#M000026" class="method-signature">
           <span class="method-name">generate</span><span class="method-args">(options = {})</span>
           </a>
         </div>
@@ -181,24 +181,24 @@ method.
 <h4>Options:</h4>
 <ul>
 <li><tt>error_wrapping</tt> - Optional. Indicates <a
-href="KernelGeneratorExt.html#M000039">if</a> the script should be wrapped
+href="KernelGeneratorExt.html#M000023">if</a> the script should be wrapped
 in try..catch blocks, defaulted to <tt>false</tt>.
 
 </li>
 <li><tt>strip_each_line</tt> - Optional. Indicates <a
-href="KernelGeneratorExt.html#M000039">if</a> leading and trailing
+href="KernelGeneratorExt.html#M000023">if</a> leading and trailing
 whitespace should be stripped from each line, defaulted to <tt>true</tt>.
 
 </li>
 <li><tt>inline</tt> - Optional. Indicates <a
-href="KernelGeneratorExt.html#M000039">if</a> new lines should be stripped
+href="KernelGeneratorExt.html#M000023">if</a> new lines should be stripped
 from the generated script, defaulted to <tt>false</tt>.
 
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000042-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000042-source">
+            onclick="toggleCode('M000026-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000026-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/eschaton_kernel/kernel_generator_ext.rb, line 54</span>
 54:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">generate</span>(<span class="ruby-identifier">options</span> = {})
@@ -223,11 +223,11 @@ from the generated script, defaulted to <tt>false</tt>.
         </div>
       </div>
 
-      <div id="method-M000039" class="method-detail">
-        <a name="M000039"></a>
+      <div id="method-M000023" class="method-detail">
+        <a name="M000023"></a>
 
         <div class="method-heading">
-          <a href="#M000039" class="method-signature">
+          <a href="#M000023" class="method-signature">
           <span class="method-name">if</span><span class="method-args">(condition) {|self| ...}</span>
           </a>
         </div>
@@ -235,10 +235,10 @@ from the generated script, defaulted to <tt>false</tt>.
         <div class="method-description">
           <p>
 Writes out a javascript &quot;<a
-href="KernelGeneratorExt.html#M000039">if</a>&quot; statement using the
+href="KernelGeneratorExt.html#M000023">if</a>&quot; statement using the
 given <tt>condition</tt>. Any code generated within the block will be
 placed inside the &quot;<a
-href="KernelGeneratorExt.html#M000039">if</a>&quot; statement.
+href="KernelGeneratorExt.html#M000023">if</a>&quot; statement.
 </p>
 <pre>
  ==== Examples:
@@ -248,8 +248,8 @@ href="KernelGeneratorExt.html#M000039">if</a>&quot; statement.
  end
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000039-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000039-source">
+            onclick="toggleCode('M000023-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000023-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/eschaton_kernel/kernel_generator_ext.rb, line 23</span>
 23:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">if</span>(<span class="ruby-identifier">condition</span>)
@@ -262,11 +262,11 @@ href="KernelGeneratorExt.html#M000039">if</a>&quot; statement.
         </div>
       </div>
 
-      <div id="method-M000041" class="method-detail">
-        <a name="M000041"></a>
+      <div id="method-M000025" class="method-detail">
+        <a name="M000025"></a>
 
         <div class="method-heading">
-          <a href="#M000041" class="method-signature">
+          <a href="#M000025" class="method-signature">
           <span class="method-name">merge</span><span class="method-args">(other_generator, options = {})</span>
           </a>
         </div>
@@ -275,11 +275,11 @@ href="KernelGeneratorExt.html#M000039">if</a>&quot; statement.
           <p>
 Merges the content of <tt>other_generator</tt> with this generator. The
 given <tt>options</tt> are the same as supported by <a
-href="KernelGeneratorExt.html#M000042">generate</a>.
+href="KernelGeneratorExt.html#M000026">generate</a>.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000041-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000041-source">
+            onclick="toggleCode('M000025-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000025-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/eschaton_kernel/kernel_generator_ext.rb, line 44</span>
 44:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">merge</span>(<span class="ruby-identifier">other_generator</span>, <span class="ruby-identifier">options</span> = {})
@@ -290,11 +290,11 @@ href="KernelGeneratorExt.html#M000042">generate</a>.
         </div>
       </div>
 
-      <div id="method-M000040" class="method-detail">
-        <a name="M000040"></a>
+      <div id="method-M000024" class="method-detail">
+        <a name="M000024"></a>
 
         <div class="method-heading">
-          <a href="#M000040" class="method-signature">
+          <a href="#M000024" class="method-signature">
           <span class="method-name">unless</span><span class="method-args">(condition) {|self| ...}</span>
           </a>
         </div>
@@ -302,10 +302,10 @@ href="KernelGeneratorExt.html#M000042">generate</a>.
         <div class="method-description">
           <p>
 Writes out a javascript &quot;<a
-href="KernelGeneratorExt.html#M000040">unless</a>&quot; statement using the
+href="KernelGeneratorExt.html#M000024">unless</a>&quot; statement using the
 given <tt>condition</tt>. Any code generated within the block will be
 placed inside the &quot;<a
-href="KernelGeneratorExt.html#M000040">unless</a>&quot; statement.
+href="KernelGeneratorExt.html#M000024">unless</a>&quot; statement.
 </p>
 <pre>
  ==== Examples:
@@ -315,8 +315,8 @@ href="KernelGeneratorExt.html#M000040">unless</a>&quot; statement.
  end
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000040-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000040-source">
+            onclick="toggleCode('M000024-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000024-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/eschaton_kernel/kernel_generator_ext.rb, line 37</span>
 37:   <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">unless</span>(<span class="ruby-identifier">condition</span>)

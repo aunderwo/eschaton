@@ -94,9 +94,9 @@ rails actions.
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000048">decode_vertices</a>&nbsp;&nbsp;
-      <a href="#M000050">encode_location</a>&nbsp;&nbsp;
-      <a href="#M000049">encode_vertices</a>&nbsp;&nbsp;
+      <a href="#M000049">decode_vertices</a>&nbsp;&nbsp;
+      <a href="#M000051">encode_location</a>&nbsp;&nbsp;
+      <a href="#M000050">encode_vertices</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -118,11 +118,11 @@ rails actions.
     <div id="methods">
       <h3 class="section-bar">Public Class methods</h3>
 
-      <div id="method-M000048" class="method-detail">
-        <a name="M000048"></a>
+      <div id="method-M000049" class="method-detail">
+        <a name="M000049"></a>
 
         <div class="method-heading">
-          <a href="#M000048" class="method-signature">
+          <a href="#M000049" class="method-signature">
           <span class="method-name">decode_vertices</span><span class="method-args">(encoded_string)</span>
           </a>
         </div>
@@ -131,15 +131,15 @@ rails actions.
           <p>
 Returns a array of location hashes based on the <tt>encoded_string</tt>
 which was encoded using <a
-href="UrlHelper.html#M000049">encode_vertices</a>.
+href="UrlHelper.html#M000050">encode_vertices</a>.
 </p>
 <pre>
  encoded_string = &quot;[-33.91,18.48],[-33.93,18.44]&quot;
  decoded        = [{:latitude=&gt;&quot;-33.91&quot;, :longitude=&gt;&quot;18.48&quot;}, {:latitude=&gt;&quot;-33.93&quot;, :longitude=&gt;&quot;18.44&quot;}]
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000048-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000048-source">
+            onclick="toggleCode('M000049-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000049-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/google_maps/url_helper.rb, line 11</span>
 11:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">decode_vertices</span>(<span class="ruby-identifier">encoded_string</span>)
@@ -154,11 +154,11 @@ href="UrlHelper.html#M000049">encode_vertices</a>.
         </div>
       </div>
 
-      <div id="method-M000050" class="method-detail">
-        <a name="M000050"></a>
+      <div id="method-M000051" class="method-detail">
+        <a name="M000051"></a>
 
         <div class="method-heading">
-          <a href="#M000050" class="method-signature">
+          <a href="#M000051" class="method-signature">
           <span class="method-name">encode_location</span><span class="method-args">(location)</span>
           </a>
         </div>
@@ -168,8 +168,8 @@ href="UrlHelper.html#M000049">encode_vertices</a>.
 Encodes the given <tt>location</tt>
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000050-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000050-source">
+            onclick="toggleCode('M000051-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000051-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/google_maps/url_helper.rb, line 49</span>
 49:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">encode_location</span>(<span class="ruby-identifier">location</span>)      
@@ -184,11 +184,11 @@ Encodes the given <tt>location</tt>
         </div>
       </div>
 
-      <div id="method-M000049" class="method-detail">
-        <a name="M000049"></a>
+      <div id="method-M000050" class="method-detail">
+        <a name="M000050"></a>
 
         <div class="method-heading">
-          <a href="#M000049" class="method-signature">
+          <a href="#M000050" class="method-signature">
           <span class="method-name">encode_vertices</span><span class="method-args">(polygon_or_line)</span>
           </a>
         </div>
@@ -197,7 +197,7 @@ Encodes the given <tt>location</tt>
           <p>
 Returns a encoded string that represents the polygon or line&#8216;s
 vertices. These values can then be decoded in a rails action using <a
-href="UrlHelper.html#M000048">decode_vertices</a>.
+href="UrlHelper.html#M000049">decode_vertices</a>.
 </p>
 <h4>Examples:</h4>
 <pre>
@@ -214,8 +214,8 @@ href="UrlHelper.html#M000048">decode_vertices</a>.
  #=&gt; &quot;/update_line?vertices=[-33.91,18.48],[-33.93,18.44]&quot;
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000049-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000049-source">
+            onclick="toggleCode('M000050-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000050-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/google_maps/url_helper.rb, line 36</span>
 36:     <span class="ruby-keyword kw">def</span> <span class="ruby-keyword kw">self</span>.<span class="ruby-identifier">encode_vertices</span>(<span class="ruby-identifier">polygon_or_line</span>)

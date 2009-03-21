@@ -87,15 +87,15 @@ helpers relating to google maps.
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000036">cancel_info_window_link</a>&nbsp;&nbsp;
-      <a href="#M000030">google_map</a>&nbsp;&nbsp;
-      <a href="#M000029">include_google_javascript</a>&nbsp;&nbsp;
-      <a href="#M000033">info_window_form</a>&nbsp;&nbsp;
-      <a href="#M000034">info_window_form_for</a>&nbsp;&nbsp;
-      <a href="#M000031">link_to_map_script</a>&nbsp;&nbsp;
-      <a href="#M000032">link_to_map_script_unless</a>&nbsp;&nbsp;
-      <a href="#M000035">prepare_info_window_options</a>&nbsp;&nbsp;
-      <a href="#M000028">run_map_script</a>&nbsp;&nbsp;
+      <a href="#M000020">cancel_info_window_link</a>&nbsp;&nbsp;
+      <a href="#M000014">google_map</a>&nbsp;&nbsp;
+      <a href="#M000013">include_google_javascript</a>&nbsp;&nbsp;
+      <a href="#M000017">info_window_form</a>&nbsp;&nbsp;
+      <a href="#M000018">info_window_form_for</a>&nbsp;&nbsp;
+      <a href="#M000015">link_to_map_script</a>&nbsp;&nbsp;
+      <a href="#M000016">link_to_map_script_unless</a>&nbsp;&nbsp;
+      <a href="#M000019">prepare_info_window_options</a>&nbsp;&nbsp;
+      <a href="#M000012">run_map_script</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -117,11 +117,11 @@ helpers relating to google maps.
     <div id="methods">
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000036" class="method-detail">
-        <a name="M000036"></a>
+      <div id="method-M000020" class="method-detail">
+        <a name="M000020"></a>
 
         <div class="method-heading">
-          <a href="#M000036" class="method-signature">
+          <a href="#M000020" class="method-signature">
           <span class="method-name">cancel_info_window_link</span><span class="method-args">()</span>
           </a>
         </div>
@@ -132,8 +132,8 @@ A &#8216;cancel&#8217; link that will close the currently open info window
 on the map. Useful when writing forms in info windows.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000036-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000036-source">
+            onclick="toggleCode('M000020-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000020-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google_view_ext.rb, line 126</span>
 126:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">cancel_info_window_link</span>
@@ -146,11 +146,11 @@ on the map. Useful when writing forms in info windows.
         </div>
       </div>
 
-      <div id="method-M000030" class="method-detail">
-        <a name="M000030"></a>
+      <div id="method-M000014" class="method-detail">
+        <a name="M000014"></a>
 
         <div class="method-heading">
-          <a href="#M000030" class="method-signature">
+          <a href="#M000014" class="method-signature">
           <span class="method-name">google_map</span><span class="method-args">(options = {})</span>
           </a>
         </div>
@@ -188,8 +188,8 @@ provided as standard CSS.
   google_map :id =&gt; 'my_cool_map'
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000030-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000030-source">
+            onclick="toggleCode('M000014-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000014-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/google_maps/google_view_ext.rb, line 48</span>
 48:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">google_map</span>(<span class="ruby-identifier">options</span> = {})
@@ -217,11 +217,11 @@ provided as standard CSS.
         </div>
       </div>
 
-      <div id="method-M000029" class="method-detail">
-        <a name="M000029"></a>
+      <div id="method-M000013" class="method-detail">
+        <a name="M000013"></a>
 
         <div class="method-heading">
-          <a href="#M000029" class="method-signature">
+          <a href="#M000013" class="method-signature">
           <span class="method-name">include_google_javascript</span><span class="method-args">(options = {})</span>
           </a>
         </div>
@@ -244,8 +244,8 @@ have already included jQuery.
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000029-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000029-source">
+            onclick="toggleCode('M000013-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000013-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/google_maps/google_view_ext.rb, line 22</span>
 22:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">include_google_javascript</span>(<span class="ruby-identifier">options</span> = {})
@@ -264,11 +264,11 @@ have already included jQuery.
         </div>
       </div>
 
-      <div id="method-M000033" class="method-detail">
-        <a name="M000033"></a>
+      <div id="method-M000017" class="method-detail">
+        <a name="M000017"></a>
 
         <div class="method-heading">
-          <a href="#M000033" class="method-signature">
+          <a href="#M000017" class="method-signature">
           <span class="method-name">info_window_form</span><span class="method-args">(options, &amp;block)</span>
           </a>
         </div>
@@ -288,8 +288,8 @@ defaulted to <tt>true</tt>.
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000033-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000033-source">
+            onclick="toggleCode('M000017-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000017-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google_view_ext.rb, line 101</span>
 101:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">info_window_form</span>(<span class="ruby-identifier">options</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>) <span class="ruby-comment cmt">#TODO rename =&gt; info_window_form_tag</span>
@@ -302,19 +302,19 @@ defaulted to <tt>true</tt>.
         </div>
       </div>
 
-      <div id="method-M000034" class="method-detail">
-        <a name="M000034"></a>
+      <div id="method-M000018" class="method-detail">
+        <a name="M000018"></a>
 
         <div class="method-heading">
-          <a href="#M000034" class="method-signature">
+          <a href="#M000018" class="method-signature">
           <span class="method-name">info_window_form_for</span><span class="method-args">(model, model_instance, options, &amp;block)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000034-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000034-source">
+            onclick="toggleCode('M000018-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000018-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google_view_ext.rb, line 107</span>
 107:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">info_window_form_for</span>(<span class="ruby-identifier">model</span>, <span class="ruby-identifier">model_instance</span>, <span class="ruby-identifier">options</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -327,11 +327,11 @@ defaulted to <tt>true</tt>.
         </div>
       </div>
 
-      <div id="method-M000031" class="method-detail">
-        <a name="M000031"></a>
+      <div id="method-M000015" class="method-detail">
+        <a name="M000015"></a>
 
         <div class="method-heading">
-          <a href="#M000031" class="method-signature">
+          <a href="#M000015" class="method-signature">
           <span class="method-name">link_to_map_script</span><span class="method-args">(name, *args) {|script| ...}</span>
           </a>
         </div>
@@ -347,8 +347,8 @@ be written within the script block
  end
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000031-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000031-source">
+            onclick="toggleCode('M000015-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000015-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/google_maps/google_view_ext.rb, line 74</span>
 74:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_to_map_script</span>(<span class="ruby-identifier">name</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -367,11 +367,11 @@ be written within the script block
         </div>
       </div>
 
-      <div id="method-M000032" class="method-detail">
-        <a name="M000032"></a>
+      <div id="method-M000016" class="method-detail">
+        <a name="M000016"></a>
 
         <div class="method-heading">
-          <a href="#M000032" class="method-signature">
+          <a href="#M000016" class="method-signature">
           <span class="method-name">link_to_map_script_unless</span><span class="method-args">(condition, name, *args, &amp;block)</span>
           </a>
         </div>
@@ -379,12 +379,12 @@ be written within the script block
         <div class="method-description">
           <p>
 Unless the <tt>condition</tt> is <tt>true</tt> this will have the same
-effect as <a href="GoogleViewExt.html#M000031">link_to_map_script</a>
+effect as <a href="GoogleViewExt.html#M000015">link_to_map_script</a>
 otherwise <tt>name</tt> will be returned.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000032-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000032-source">
+            onclick="toggleCode('M000016-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000016-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/google_maps/google_view_ext.rb, line 88</span>
 88:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">link_to_map_script_unless</span>(<span class="ruby-identifier">condition</span>, <span class="ruby-identifier">name</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">args</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -399,19 +399,19 @@ otherwise <tt>name</tt> will be returned.
         </div>
       </div>
 
-      <div id="method-M000035" class="method-detail">
-        <a name="M000035"></a>
+      <div id="method-M000019" class="method-detail">
+        <a name="M000019"></a>
 
         <div class="method-heading">
-          <a href="#M000035" class="method-signature">
+          <a href="#M000019" class="method-signature">
           <span class="method-name">prepare_info_window_options</span><span class="method-args">(options)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000035-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000035-source">
+            onclick="toggleCode('M000019-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000019-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google_view_ext.rb, line 113</span>
 113:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">prepare_info_window_options</span>(<span class="ruby-identifier">options</span>)
@@ -429,11 +429,11 @@ otherwise <tt>name</tt> will be returned.
         </div>
       </div>
 
-      <div id="method-M000028" class="method-detail">
-        <a name="M000028"></a>
+      <div id="method-M000012" class="method-detail">
+        <a name="M000012"></a>
 
         <div class="method-heading">
-          <a href="#M000028" class="method-signature">
+          <a href="#M000012" class="method-signature">
           <span class="method-name">run_map_script</span><span class="method-args">() {|script| ...}</span>
           </a>
         </div>
@@ -450,8 +450,8 @@ script.
  end
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000028-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000028-source">
+            onclick="toggleCode('M000012-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000012-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/google_maps/google_view_ext.rb, line 10</span>
 10:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">run_map_script</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)

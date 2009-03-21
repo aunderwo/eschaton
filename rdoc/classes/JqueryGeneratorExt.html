@@ -80,11 +80,11 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000018">avoid_conflicts!</a>&nbsp;&nbsp;
-      <a href="#M000020">get</a>&nbsp;&nbsp;
-      <a href="#M000021">post</a>&nbsp;&nbsp;
-      <a href="#M000022">post_and_run</a>&nbsp;&nbsp;
-      <a href="#M000019">when_document_ready</a>&nbsp;&nbsp;
+      <a href="#M000002">avoid_conflicts!</a>&nbsp;&nbsp;
+      <a href="#M000004">get</a>&nbsp;&nbsp;
+      <a href="#M000005">post</a>&nbsp;&nbsp;
+      <a href="#M000006">post_and_run</a>&nbsp;&nbsp;
+      <a href="#M000003">when_document_ready</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -106,11 +106,11 @@
     <div id="methods">
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000018" class="method-detail">
-        <a name="M000018"></a>
+      <div id="method-M000002" class="method-detail">
+        <a name="M000002"></a>
 
         <div class="method-heading">
-          <a href="#M000018" class="method-signature">
+          <a href="#M000002" class="method-signature">
           <span class="method-name">avoid_conflicts!</span><span class="method-args">()</span>
           </a>
         </div>
@@ -122,8 +122,8 @@ it. This helps to make sure that jQuery doesn&#8216;t conflict with the $
 object of other libraries
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000018-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000018-source">
+            onclick="toggleCode('M000002-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000002-source">
 <pre>
    <span class="ruby-comment cmt"># File slices/jquery/jquery_generator_ext.rb, line 5</span>
 5:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">avoid_conflicts!</span>
@@ -134,25 +134,25 @@ object of other libraries
         </div>
       </div>
 
-      <div id="method-M000020" class="method-detail">
-        <a name="M000020"></a>
+      <div id="method-M000004" class="method-detail">
+        <a name="M000004"></a>
 
         <div class="method-heading">
-          <a href="#M000020" class="method-signature">
+          <a href="#M000004" class="method-signature">
           <span class="method-name">get</span><span class="method-args">(url) {|:data| ...}</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Makes a <a href="JqueryGeneratorExt.html#M000020">get</a> request to the
+Makes a <a href="JqueryGeneratorExt.html#M000004">get</a> request to the
 <tt>url</tt> and yields the <tt>data</tt> variable in which the contents of
 the request are stored. See Escahton.url_for_javascript for <tt>url</tt>
 options.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000020-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000020-source">
+            onclick="toggleCode('M000004-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000004-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/jquery/jquery_generator_ext.rb, line 24</span>
 24:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">get</span>(<span class="ruby-identifier">url</span>)
@@ -165,44 +165,44 @@ options.
         </div>
       </div>
 
-      <div id="method-M000021" class="method-detail">
-        <a name="M000021"></a>
+      <div id="method-M000005" class="method-detail">
+        <a name="M000005"></a>
 
         <div class="method-heading">
-          <a href="#M000021" class="method-signature">
+          <a href="#M000005" class="method-signature">
           <span class="method-name">post</span><span class="method-args">(options) {|:data if block_given?| ...}</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Performs an http <a href="JqueryGeneratorExt.html#M000021">post</a> using
+Performs an http <a href="JqueryGeneratorExt.html#M000005">post</a> using
 either the <tt>form</tt> or the <tt>params</tt> to the given <tt>url</tt>.
 </p>
 <h4>Options:</h4>
 <ul>
 <li><tt>url</tt> - Required. The url to <a
-href="JqueryGeneratorExt.html#M000021">post</a> to, see
+href="JqueryGeneratorExt.html#M000005">post</a> to, see
 Escahton.url_for_javascript for supported options.
 
 </li>
 <li><tt>form</tt> - Optional. The id of the form to <a
-href="JqueryGeneratorExt.html#M000021">post</a>.
+href="JqueryGeneratorExt.html#M000005">post</a>.
 
 </li>
 <li><tt>params</tt> - Optional. Parameters to <a
-href="JqueryGeneratorExt.html#M000021">post</a>
+href="JqueryGeneratorExt.html#M000005">post</a>
 
 </li>
 <li><tt>eval_response</tt> - Optional. Indicates if the response of the <a
-href="JqueryGeneratorExt.html#M000021">post</a> should be evaled and
+href="JqueryGeneratorExt.html#M000005">post</a> should be evaled and
 executed client side.
 
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000021-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000021-source">
+            onclick="toggleCode('M000005-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000005-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/jquery/jquery_generator_ext.rb, line 37</span>
 37:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">post</span>(<span class="ruby-identifier">options</span>)
@@ -233,24 +233,24 @@ executed client side.
         </div>
       </div>
 
-      <div id="method-M000022" class="method-detail">
-        <a name="M000022"></a>
+      <div id="method-M000006" class="method-detail">
+        <a name="M000006"></a>
 
         <div class="method-heading">
-          <a href="#M000022" class="method-signature">
+          <a href="#M000006" class="method-signature">
           <span class="method-name">post_and_run</span><span class="method-args">(options)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-Performs an http <a href="JqueryGeneratorExt.html#M000021">post</a> and
+Performs an http <a href="JqueryGeneratorExt.html#M000005">post</a> and
 evaluates the response as javascript. Supports the same options as <a
-href="JqueryGeneratorExt.html#M000021">post</a>.
+href="JqueryGeneratorExt.html#M000005">post</a>.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000022-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000022-source">
+            onclick="toggleCode('M000006-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000006-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/jquery/jquery_generator_ext.rb, line 62</span>
 62:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">post_and_run</span>(<span class="ruby-identifier">options</span>)
@@ -263,11 +263,11 @@ href="JqueryGeneratorExt.html#M000021">post</a>.
         </div>
       </div>
 
-      <div id="method-M000019" class="method-detail">
-        <a name="M000019"></a>
+      <div id="method-M000003" class="method-detail">
+        <a name="M000003"></a>
 
         <div class="method-heading">
-          <a href="#M000019" class="method-signature">
+          <a href="#M000003" class="method-signature">
           <span class="method-name">when_document_ready</span><span class="method-args">() {|self| ...}</span>
           </a>
         </div>
@@ -285,8 +285,8 @@ ready.
  end
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000019-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000019-source">
+            onclick="toggleCode('M000003-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000003-source">
 <pre>
     <span class="ruby-comment cmt"># File slices/jquery/jquery_generator_ext.rb, line 16</span>
 16:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">when_document_ready</span>
