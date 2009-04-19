@@ -82,6 +82,7 @@
       <div class="name-list">
       <a href="#M000045">google_map_script</a>&nbsp;&nbsp;
       <a href="#M000046">mapping_script</a>&nbsp;&nbsp;
+      <a href="#M000047">set_coordinate_elements</a>&nbsp;&nbsp;
       <a href="#M000044">with_mapping_scripts</a>&nbsp;&nbsp;
       </div>
     </div>
@@ -194,6 +195,85 @@ in <a href="GoogleGeneratorExt.html#M000045">google_map_script</a>.
 55:       <span class="ruby-keyword kw">end</span>
 56:     <span class="ruby-keyword kw">end</span>
 57:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div id="method-M000047" class="method-detail">
+        <a name="M000047"></a>
+
+        <div class="method-heading">
+          <a href="#M000047" class="method-signature">
+          <span class="method-name">set_coordinate_elements</span><span class="method-args">(options = {})</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Sets latitude and longitude values of the <tt>location</tt> option in html
+input elements. Used to update form fields with a location on the map such
+as click location or the location of a marker.
+</p>
+<h4>Options</h4>
+<ul>
+<li><tt>location</tt> - Required. The location whos latitude and logitude will
+be used.
+
+</li>
+<li><tt>latitude_element</tt> - Optional. The id of the element whos value will
+be set to the latitude of the <tt>location</tt> option. Defaulted to id of
+<tt>latitude</tt>.
+
+</li>
+<li><tt>longitude_element</tt> - Optional. The id of the element whos value
+will be set to the longitude of the <tt>location</tt> option. Defaulted to
+id of <tt>longitude</tt>.
+
+</li>
+</ul>
+<h4>Examples:</h4>
+<p>
+Say we wanted to set the click location of the map to html input elements:
+</p>
+<pre>
+ # The two elements
+ &lt;input type=&quot;text&quot; name=&quot;latitude&quot; value=&quot;&quot; id=&quot;latitude&quot;&gt;
+ &lt;input type=&quot;text&quot; name=&quot;longitude&quot; value=&quot;&quot; id=&quot;longitude&quot;&gt;
+
+ # The code
+ map.click do |script, location|
+   script.set_coordinate_elements :location =&gt; location
+ end
+</pre>
+<p>
+Or, set the values of specific elements using a markers location
+</p>
+<pre>
+ # The two elements
+ &lt;input type=&quot;text&quot; name=&quot;location[latitude]&quot; value=&quot;&quot; id=&quot;location_latitude&quot;&gt;
+ &lt;input type=&quot;text&quot; name=&quot;location[latitude]&quot; value=&quot;&quot; id=&quot;location_longitude&quot;&gt;
+
+ # The code
+ marker = map.add_marker ...
+ map.click do |script, location|
+   script.set_coordinate_elements :location =&gt; marker.location,
+                                  :latitude_element =&gt; :location_latitude
+                                  :longitude_element =&gt; :location_longitude
+ end
+</pre>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000047-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000047-source">
+<pre>
+    <span class="ruby-comment cmt"># File slices/google_maps/google_generator_ext.rb, line 93</span>
+93:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set_coordinate_elements</span>(<span class="ruby-identifier">options</span> = {})
+94:     <span class="ruby-identifier">options</span>.<span class="ruby-identifier">default!</span> <span class="ruby-identifier">:latitude_element</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:latitude</span>, <span class="ruby-identifier">:longitude_element</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:longitude</span>
+95:     <span class="ruby-identifier">location</span> = <span class="ruby-identifier">options</span>[<span class="ruby-identifier">:location</span>]
+96:     
+97:     <span class="ruby-keyword kw">self</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;$('#{options[:latitude_element]}').value = #{location}.lat();&quot;</span>
+98:     <span class="ruby-keyword kw">self</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-node">&quot;$('#{options[:longitude_element]}').value = #{location}.lng();&quot;</span>
+99:   <span class="ruby-keyword kw">end</span>
 </pre>
           </div>
         </div>

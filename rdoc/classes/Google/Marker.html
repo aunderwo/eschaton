@@ -83,17 +83,17 @@
     <div id="description">
       <p>
 Represents a marker that can be added to a <a href="Map.html">Map</a> using
-<a href="Map.html#M000122">Map#add_marker</a>. If a method or event is not
+<a href="Map.html#M000127">Map#add_marker</a>. If a method or event is not
 documented here please see googles <a
 href="http://code.google.com/apis/maps/documentation/reference.html#GMarker">online</a>
 docs for details. See <a
-href="MapObject.html#M000107">MapObject#listen_to</a> on how to use events
+href="MapObject.html#M000109">MapObject#listen_to</a> on how to use events
 not listed on this object.
 </p>
 <p>
-You will most likely use <a href="Marker.html#M000094">click</a>, <a
-href="Marker.html#M000091">open_info_window</a> and <a
-href="Marker.html#M000101">set_tooltip</a> to get some basic functionality
+You will most likely use <a href="Marker.html#M000096">click</a>, <a
+href="Marker.html#M000093">open_info_window</a> and <a
+href="Marker.html#M000103">set_tooltip</a> to get some basic functionality
 going.
 </p>
 <h3>General examples:</h3>
@@ -137,7 +137,7 @@ going.
  Google::Marker.new :location =&gt; {:latitude =&gt; -33.947, :longitude =&gt; 18.462},
                     :circle =&gt; {:radius =&gt; 500, :border_width =&gt; 5}
 </pre>
-<h3>Info windows using <a href="Marker.html#M000091">open_info_window</a>:</h3>
+<h3>Info windows using <a href="Marker.html#M000093">open_info_window</a>:</h3>
 <pre>
  marker.open_info_window :text =&gt; 'Hello there...'
 
@@ -147,7 +147,7 @@ going.
 
  map.open_info_window :url =&gt; {:controller =&gt; :spot, :action =&gt; :show, :id =&gt; @spot}
 </pre>
-<h3>Using the <a href="Marker.html#M000094">click</a> event:</h3>
+<h3>Using the <a href="Marker.html#M000096">click</a> event:</h3>
 <pre>
  # Open a info window and circle the marker.
  marker.click do |script|
@@ -165,22 +165,22 @@ going.
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000092">cache_info_window</a>&nbsp;&nbsp;
-      <a href="#M000099">change_icon</a>&nbsp;&nbsp;
-      <a href="#M000100">circle!</a>&nbsp;&nbsp;
-      <a href="#M000094">click</a>&nbsp;&nbsp;
-      <a href="#M000090">location</a>&nbsp;&nbsp;
-      <a href="#M000103">mouse_off</a>&nbsp;&nbsp;
-      <a href="#M000102">mouse_over</a>&nbsp;&nbsp;
-      <a href="#M000104">move_to</a>&nbsp;&nbsp;
-      <a href="#M000089">new</a>&nbsp;&nbsp;
-      <a href="#M000093">open_cached_info_window</a>&nbsp;&nbsp;
-      <a href="#M000091">open_info_window</a>&nbsp;&nbsp;
-      <a href="#M000101">set_tooltip</a>&nbsp;&nbsp;
-      <a href="#M000098">show_map_blowup</a>&nbsp;&nbsp;
-      <a href="#M000096">when_being_dragged</a>&nbsp;&nbsp;
-      <a href="#M000097">when_dropped</a>&nbsp;&nbsp;
-      <a href="#M000095">when_picked_up</a>&nbsp;&nbsp;
+      <a href="#M000094">cache_info_window</a>&nbsp;&nbsp;
+      <a href="#M000101">change_icon</a>&nbsp;&nbsp;
+      <a href="#M000102">circle!</a>&nbsp;&nbsp;
+      <a href="#M000096">click</a>&nbsp;&nbsp;
+      <a href="#M000092">location</a>&nbsp;&nbsp;
+      <a href="#M000105">mouse_off</a>&nbsp;&nbsp;
+      <a href="#M000104">mouse_over</a>&nbsp;&nbsp;
+      <a href="#M000106">move_to</a>&nbsp;&nbsp;
+      <a href="#M000091">new</a>&nbsp;&nbsp;
+      <a href="#M000095">open_cached_info_window</a>&nbsp;&nbsp;
+      <a href="#M000093">open_info_window</a>&nbsp;&nbsp;
+      <a href="#M000103">set_tooltip</a>&nbsp;&nbsp;
+      <a href="#M000100">show_map_blowup</a>&nbsp;&nbsp;
+      <a href="#M000098">when_being_dragged</a>&nbsp;&nbsp;
+      <a href="#M000099">when_dropped</a>&nbsp;&nbsp;
+      <a href="#M000097">when_picked_up</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -232,11 +232,11 @@ going.
     <div id="methods">
       <h3 class="section-bar">Public Class methods</h3>
 
-      <div id="method-M000089" class="method-detail">
-        <a name="M000089"></a>
+      <div id="method-M000091" class="method-detail">
+        <a name="M000091"></a>
 
         <div class="method-heading">
-          <a href="#M000089" class="method-signature">
+          <a href="#M000091" class="method-signature">
           <span class="method-name">new</span><span class="method-args">(options = {})</span>
           </a>
         </div>
@@ -244,9 +244,9 @@ going.
         <div class="method-description">
           <h4>Options:</h4>
 <ul>
-<li><tt><a href="Marker.html#M000090">location</a></tt> - Required. A <a
+<li><tt><a href="Marker.html#M000092">location</a></tt> - Required. A <a
 href="Location.html">Location</a> or whatever <a
-href="Location.html#M000069">Location#new</a> supports which indicates
+href="Location.html#M000071">Location#new</a> supports which indicates
 where the marker must be placed on the map.
 
 </li>
@@ -261,11 +261,11 @@ Gravatar#new for other valid options.
 </li>
 <li><tt>circle</tt> - Optional. Indicates if a circle should be drawn around
 the marker, also supports styling options(see <a
-href="Circle.html#M000155">Circle#new</a>)
+href="Circle.html#M000160">Circle#new</a>)
 
 </li>
 <li><tt>tooltip</tt> - Optional. See <a
-href="Tooltip.html#M000066">Google::Tooltip#new</a> for valid options.
+href="Tooltip.html#M000068">Google::Tooltip#new</a> for valid options.
 
 </li>
 </ul>
@@ -275,8 +275,8 @@ href="http://code.google.com/apis/maps/documentation/reference.html#GMarkerOptio
 that are supported.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000089-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000089-source">
+            onclick="toggleCode('M000091-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000091-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 80</span>
  80:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">options</span> = {})
@@ -318,11 +318,11 @@ that are supported.
 
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000092" class="method-detail">
-        <a name="M000092"></a>
+      <div id="method-M000094" class="method-detail">
+        <a name="M000094"></a>
 
         <div class="method-heading">
-          <a href="#M000092" class="method-signature">
+          <a href="#M000094" class="method-signature">
           <span class="method-name">cache_info_window</span><span class="method-args">(options)</span>
           </a>
         </div>
@@ -330,14 +330,14 @@ that are supported.
         <div class="method-description">
           <p>
 Supports all the same options as <a
-href="Marker.html#M000091">open_info_window</a>. The info window is then
+href="Marker.html#M000093">open_info_window</a>. The info window is then
 cached so that every time the marker is &#8216;clicked&#8217; it will open
 up the cached info window. The cached info window can also be opened using
-<a href="Marker.html#M000093">open_cached_info_window</a>.
+<a href="Marker.html#M000095">open_cached_info_window</a>.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000092-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000092-source">
+            onclick="toggleCode('M000094-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000094-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 143</span>
 143:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">cache_info_window</span>(<span class="ruby-identifier">options</span>)
@@ -349,11 +349,11 @@ up the cached info window. The cached info window can also be opened using
         </div>
       </div>
 
-      <div id="method-M000099" class="method-detail">
-        <a name="M000099"></a>
+      <div id="method-M000101" class="method-detail">
+        <a name="M000101"></a>
 
         <div class="method-heading">
-          <a href="#M000099" class="method-signature">
+          <a href="#M000101" class="method-signature">
           <span class="method-name">change_icon</span><span class="method-args">(image)</span>
           </a>
         </div>
@@ -368,8 +368,8 @@ neither the print image nor the shadow image are adjusted.
  marker.change_icon &quot;/images/red_dot.gif&quot;
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000099-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000099-source">
+            onclick="toggleCode('M000101-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000101-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 221</span>
 221:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">change_icon</span>(<span class="ruby-identifier">image</span>)
@@ -382,11 +382,11 @@ neither the print image nor the shadow image are adjusted.
         </div>
       </div>
 
-      <div id="method-M000100" class="method-detail">
-        <a name="M000100"></a>
+      <div id="method-M000102" class="method-detail">
+        <a name="M000102"></a>
 
         <div class="method-heading">
-          <a href="#M000100" class="method-signature">
+          <a href="#M000102" class="method-signature">
           <span class="method-name">circle!</span><span class="method-args">(options = {})</span>
           </a>
         </div>
@@ -394,7 +394,7 @@ neither the print image nor the shadow image are adjusted.
         <div class="method-description">
           <p>
 Draws a circle around the marker, see <a
-href="Circle.html#M000155">Circle#new</a> for valid styling options.
+href="Circle.html#M000160">Circle#new</a> for valid styling options.
 </p>
 <h4>Examples:</h4>
 <pre>
@@ -403,8 +403,8 @@ href="Circle.html#M000155">Circle#new</a> for valid styling options.
  marker.circle! :radius =&gt; 500, :border_width =&gt; 5
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000100-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000100-source">
+            onclick="toggleCode('M000102-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000102-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 233</span>
 233:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">circle!</span>(<span class="ruby-identifier">options</span> = {})
@@ -425,11 +425,11 @@ href="Circle.html#M000155">Circle#new</a> for valid styling options.
         </div>
       </div>
 
-      <div id="method-M000094" class="method-detail">
-        <a name="M000094"></a>
+      <div id="method-M000096" class="method-detail">
+        <a name="M000096"></a>
 
         <div class="method-heading">
-          <a href="#M000094" class="method-signature">
+          <a href="#M000096" class="method-signature">
           <span class="method-name">click</span><span class="method-args">(info_window_options = nil) {|script| ...}</span>
           </a>
         </div>
@@ -437,7 +437,7 @@ href="Circle.html#M000155">Circle#new</a> for valid styling options.
         <div class="method-description">
           <p>
 If called with a block it will attach the block to the &quot;<a
-href="Marker.html#M000094">click</a>&quot; event of the marker. If
+href="Marker.html#M000096">click</a>&quot; event of the marker. If
 <tt>info_window_options</tt> are supplied an info window will be opened
 with those options and the block will be ignored.
 </p>
@@ -450,8 +450,8 @@ with those options and the block will be ignored.
  end
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000094-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000094-source">
+            onclick="toggleCode('M000096-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000096-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 162</span>
 162:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">click</span>(<span class="ruby-identifier">info_window_options</span> = <span class="ruby-keyword kw">nil</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>) <span class="ruby-comment cmt"># :yields: script</span>
@@ -468,23 +468,23 @@ with those options and the block will be ignored.
         </div>
       </div>
 
-      <div id="method-M000090" class="method-detail">
-        <a name="M000090"></a>
+      <div id="method-M000092" class="method-detail">
+        <a name="M000092"></a>
 
         <div class="method-heading">
-          <a href="#M000090" class="method-signature">
+          <a href="#M000092" class="method-signature">
           <span class="method-name">location</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-The <a href="Marker.html#M000090">location</a> at which the marker is
+The <a href="Marker.html#M000092">location</a> at which the marker is
 currently placed on the map.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000090-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000090-source">
+            onclick="toggleCode('M000092-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000092-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 114</span>
 114:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">location</span>
@@ -495,11 +495,11 @@ currently placed on the map.
         </div>
       </div>
 
-      <div id="method-M000103" class="method-detail">
-        <a name="M000103"></a>
+      <div id="method-M000105" class="method-detail">
+        <a name="M000105"></a>
 
         <div class="method-heading">
-          <a href="#M000103" class="method-signature">
+          <a href="#M000105" class="method-signature">
           <span class="method-name">mouse_off</span><span class="method-args">(&amp;block)</span>
           </a>
         </div>
@@ -516,8 +516,8 @@ or interacting with the DOM.
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000103-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000103-source">
+            onclick="toggleCode('M000105-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000105-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 294</span>
 294:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">mouse_off</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -528,11 +528,11 @@ or interacting with the DOM.
         </div>
       </div>
 
-      <div id="method-M000102" class="method-detail">
-        <a name="M000102"></a>
+      <div id="method-M000104" class="method-detail">
+        <a name="M000104"></a>
 
         <div class="method-heading">
-          <a href="#M000102" class="method-signature">
+          <a href="#M000104" class="method-signature">
           <span class="method-name">mouse_over</span><span class="method-args">(&amp;block)</span>
           </a>
         </div>
@@ -549,8 +549,8 @@ or interacting with the DOM.
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000102-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000102-source">
+            onclick="toggleCode('M000104-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000104-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 286</span>
 286:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">mouse_over</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
@@ -561,11 +561,11 @@ or interacting with the DOM.
         </div>
       </div>
 
-      <div id="method-M000104" class="method-detail">
-        <a name="M000104"></a>
+      <div id="method-M000106" class="method-detail">
+        <a name="M000106"></a>
 
         <div class="method-heading">
-          <a href="#M000104" class="method-signature">
+          <a href="#M000106" class="method-signature">
           <span class="method-name">move_to</span><span class="method-args">(location)</span>
           </a>
         </div>
@@ -573,11 +573,11 @@ or interacting with the DOM.
         <div class="method-description">
           <p>
 Moves the marker to the given <tt><a
-href="Marker.html#M000090">location</a></tt> on the map.
+href="Marker.html#M000092">location</a></tt> on the map.
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000104-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000104-source">
+            onclick="toggleCode('M000106-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000106-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 299</span>
 299:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">move_to</span>(<span class="ruby-identifier">location</span>)
@@ -593,19 +593,19 @@ href="Marker.html#M000090">location</a></tt> on the map.
         </div>
       </div>
 
-      <div id="method-M000093" class="method-detail">
-        <a name="M000093"></a>
+      <div id="method-M000095" class="method-detail">
+        <a name="M000095"></a>
 
         <div class="method-heading">
-          <a href="#M000093" class="method-signature">
+          <a href="#M000095" class="method-signature">
           <span class="method-name">open_cached_info_window</span><span class="method-args">()</span>
           </a>
         </div>
       
         <div class="method-description">
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000093-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000093-source">
+            onclick="toggleCode('M000095-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000095-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 148</span>
 148:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">open_cached_info_window</span>
@@ -616,11 +616,11 @@ href="Marker.html#M000090">location</a></tt> on the map.
         </div>
       </div>
 
-      <div id="method-M000091" class="method-detail">
-        <a name="M000091"></a>
+      <div id="method-M000093" class="method-detail">
+        <a name="M000093"></a>
 
         <div class="method-heading">
-          <a href="#M000091" class="method-signature">
+          <a href="#M000093" class="method-signature">
           <span class="method-name">open_info_window</span><span class="method-args">(options)</span>
           </a>
         </div>
@@ -647,11 +647,11 @@ info window.
 </li>
 <li><tt>include_location</tt> - Optional. Works in conjunction with the
 <tt>url</tt> option and indicates if latitude and longitude parameters of
-<tt><a href="Marker.html#M000090">location</a></tt> should be sent through
+<tt><a href="Marker.html#M000092">location</a></tt> should be sent through
 with the <tt>url</tt>, defaulted to <tt>true</tt>. Use <tt>params[:<a
-href="Marker.html#M000090">location</a>]</tt> or <tt>params[:<a
-href="Marker.html#M000090">location</a>][:latitude]</tt> and <tt>params[:<a
-href="Marker.html#M000090">location</a>][:longitude]</tt> in your action.
+href="Marker.html#M000092">location</a>]</tt> or <tt>params[:<a
+href="Marker.html#M000092">location</a>][:latitude]</tt> and <tt>params[:<a
+href="Marker.html#M000092">location</a>][:longitude]</tt> in your action.
 
 </li>
 </ul>
@@ -666,8 +666,8 @@ href="Marker.html#M000090">location</a>][:longitude]</tt> in your action.
  map.open_info_window :url =&gt; {:controller =&gt; :spot, :action =&gt; :show, :id =&gt; @spot}
 </pre>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000091-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000091-source">
+            onclick="toggleCode('M000093-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000093-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 136</span>
 136:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">open_info_window</span>(<span class="ruby-identifier">options</span>)
@@ -679,23 +679,23 @@ href="Marker.html#M000090">location</a>][:longitude]</tt> in your action.
         </div>
       </div>
 
-      <div id="method-M000101" class="method-detail">
-        <a name="M000101"></a>
+      <div id="method-M000103" class="method-detail">
+        <a name="M000103"></a>
 
         <div class="method-heading">
-          <a href="#M000101" class="method-signature">
+          <a href="#M000103" class="method-signature">
           <span class="method-name">set_tooltip</span><span class="method-args">(options)</span>
           </a>
         </div>
       
         <div class="method-description">
           <p>
-See <a href="Tooltipable.html#M000047">Tooltipable#set_tooltip</a> about
+See <a href="Tooltipable.html#M000048">Tooltipable#set_tooltip</a> about
 valid <tt>options</tt>
 </p>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000101-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000101-source">
+            onclick="toggleCode('M000103-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000103-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 252</span>
 252:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">set_tooltip</span>(<span class="ruby-identifier">options</span>)
@@ -720,11 +720,11 @@ valid <tt>options</tt>
         </div>
       </div>
 
-      <div id="method-M000098" class="method-detail">
-        <a name="M000098"></a>
+      <div id="method-M000100" class="method-detail">
+        <a name="M000100"></a>
 
         <div class="method-heading">
-          <a href="#M000098" class="method-signature">
+          <a href="#M000100" class="method-signature">
           <span class="method-name">show_map_blowup</span><span class="method-args">(options = {})</span>
           </a>
         </div>
@@ -744,8 +744,8 @@ marker.
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000098-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000098-source">
+            onclick="toggleCode('M000100-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000100-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 211</span>
 211:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">show_map_blowup</span>(<span class="ruby-identifier">options</span> = {})
@@ -758,11 +758,11 @@ marker.
         </div>
       </div>
 
-      <div id="method-M000096" class="method-detail">
-        <a name="M000096"></a>
+      <div id="method-M000098" class="method-detail">
+        <a name="M000098"></a>
 
         <div class="method-heading">
-          <a href="#M000096" class="method-signature">
+          <a href="#M000098" class="method-signature">
           <span class="method-name">when_being_dragged</span><span class="method-args">() {|script, :current_location| ...}</span>
           </a>
         </div>
@@ -778,14 +778,14 @@ map.
 or interacting with the DOM.
 
 </li>
-<li><tt>current_location</tt> - The <a href="Marker.html#M000090">location</a>
+<li><tt>current_location</tt> - The <a href="Marker.html#M000092">location</a>
 at which the marker is presently hovering.
 
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000096-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000096-source">
+            onclick="toggleCode('M000098-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000098-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 185</span>
 185:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">when_being_dragged</span>
@@ -800,11 +800,11 @@ at which the marker is presently hovering.
         </div>
       </div>
 
-      <div id="method-M000097" class="method-detail">
-        <a name="M000097"></a>
+      <div id="method-M000099" class="method-detail">
+        <a name="M000099"></a>
 
         <div class="method-heading">
-          <a href="#M000097" class="method-signature">
+          <a href="#M000099" class="method-signature">
           <span class="method-name">when_dropped</span><span class="method-args">() {|script, :drop_location| ...}</span>
           </a>
         </div>
@@ -820,14 +820,14 @@ dragged.
 or interacting with the DOM.
 
 </li>
-<li><tt>drop_location</tt> - The <a href="Marker.html#M000090">location</a> on
+<li><tt>drop_location</tt> - The <a href="Marker.html#M000092">location</a> on
 the map where the marker was dropped.
 
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000097-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000097-source">
+            onclick="toggleCode('M000099-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000099-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 198</span>
 198:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">when_dropped</span>
@@ -842,11 +842,11 @@ the map where the marker was dropped.
         </div>
       </div>
 
-      <div id="method-M000095" class="method-detail">
-        <a name="M000095"></a>
+      <div id="method-M000097" class="method-detail">
+        <a name="M000097"></a>
 
         <div class="method-heading">
-          <a href="#M000095" class="method-signature">
+          <a href="#M000097" class="method-signature">
           <span class="method-name">when_picked_up</span><span class="method-args">(&amp;block)</span>
           </a>
         </div>
@@ -864,8 +864,8 @@ or interacting with the DOM.
 </li>
 </ul>
           <p><a class="source-toggle" href="#"
-            onclick="toggleCode('M000095-source');return false;">[Source]</a></p>
-          <div class="method-source-code" id="M000095-source">
+            onclick="toggleCode('M000097-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000097-source">
 <pre>
      <span class="ruby-comment cmt"># File slices/google_maps/google/marker.rb, line 176</span>
 176:     <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">when_picked_up</span>(<span class="ruby-operator">&amp;</span><span class="ruby-identifier">block</span>)
